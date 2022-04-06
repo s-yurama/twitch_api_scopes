@@ -14,20 +14,20 @@ $scope->setMod('chat:read', true);
 $scope->setMod('chat:edit', true);
 
 $listOfActiveScopes = $scope->getScopes(true);
-foreach($listOfActiveScopes as $scope) {
-    echo $scope,"\n";
+foreach($listOfActiveScopes as $value) {
+    echo $value,"\n";
 }
 
 // Please write in API params.
 // This class has __toString() feature
-echo $scope;
+echo (string)$scope;
 //            $response = $this->client->request( 'POST', self::TOKEN_PATH, [
 //                'headers'         => [],
 //                'query'           => [
 //                    'client_id'     => $this->clientId,
 //                    'client_secret' => $this->clientSecret,
 //                    'grant_type'    => 'client_credentials',
-//                    'scope'         => $scope,
+//                    'scope'         => (string)$scope,
 //                ],
 //            ]);
 ```
