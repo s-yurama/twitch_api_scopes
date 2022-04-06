@@ -10,8 +10,8 @@ put suitable location in your service and, test example is...
 $scope = new Scope();
 
 // set scope which you wanna use to true. "setMods()" is for multiple params.
-$scope->setMod('chat::read', true);
-$scope->setMod('chat::edit', true);
+$scope->setMod('chat:read', true);
+$scope->setMod('chat:edit', true);
 
 $listOfActiveScopes = $scope->getScopes(true);
 foreach($listOfActiveScopes as $scope) {
